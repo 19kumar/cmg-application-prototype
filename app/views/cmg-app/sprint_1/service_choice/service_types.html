@@ -1,0 +1,68 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+    <a href="#" class="govuk-back-link">Back</a>
+  
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <h1 class="govuk-heading-xl">Choosing a Payment Service</h1>
+          <p class="govuk-body">Applicant reads the following Service types and selects either Family-based Arrangement, Direct Pay or Collect and Pay:</p>
+
+          <h2 class="govuk-heading-l">Family-based Arrangement</h2>
+          <p class="govuk-body">
+           A family-based arrangement is where parents agree between themselves how to support a child when they separate. It’s the most flexible solution—both parents agree how and when maintenance is paid. The CM Options service can provide you with guidance and support, such as an online calculator that will give you an idea of how much maintenance should be paid</p>
+           <p class="govuk-body">
+            If a FBA would work, provide CM Options & online calculator details
+          </p>
+
+          <h2 class="govuk-heading-l">Direct Pay</h2>
+          <p class="govuk-body">
+            This is where we work out what should be paid and both parents agree how and when to pay. Other than the application fee, this option is FREE. You’ll need to provide your bank details to the paying parent and work together to keep things on track
+
+            <p class="govuk-body">It’s important to keep a record of payments, so using online banking or standing order is ideal. If a payment is late, try and contact the other parent. But if the payment is more than 5 working days late, you can contact us to help
+                </p>
+            
+                <p class="govuk-body">It’s a good idea to also make sure you get receipts for cash and goods received.
+                </p>
+
+                 <p class="govuk-body">*Need to empathsize the difficulties between switching between DD and C & P, and why you need to make the correct choice.
+                </p>
+
+                <p class="govuk-body">*DD will share bank details with PP are you happy to continue? - need to consider extra security questions.
+                </p>
+
+          <h2 class="govuk-heading-l">Collect and Pay</h2>
+          <p class="govuk-body">
+           You can choose Collect & Pay, or if Direct Pay doesn't work where the other parent doesn’t pay in time and in full, we then move your case to Collect & Pay
+
+           <p class="govuk-body">
+            Collect & Pay is where we work out the maintenance that is due. We request the maintenance from the other parent and then pass it on. The Paying Parent has to pay 20% on top of their expected payments, and we will deduct 4% from the amount we pass on to you. For example, if the expected payment is £100, the Paying Parent will need to pay £120 and we will pass £96 on to you</p>
+
+            <p class="govuk-body">It’s a good idea to make sure you get receipts for cash and goods received</p>
+
+
+                <p class="govuk-body">The other parent has been given a choice too. If they selected Direct Pay and we have no reason to believe they wouldn't pay, the service type will be Direct Pay</p>
+
+                <h3 class="govuk-heading-m">*Compliance Opportunity</h3>
+<p class="govuk-body">
+If Selected, and the Paying Parent wants to use Direct Pay, they may be offered a 6 month trial period.
+          </p>
+     
+              <button type="submit" class="govuk-button">
+                  continue
+                </button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+{% endblock %}

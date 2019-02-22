@@ -1,0 +1,48 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+    <a href="index.html" class="govuk-back-link">Back</a>
+  
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+      <div class="govuk-grid-row">
+
+        <div class="govuk-grid-column-two-thirds">
+          <form action="/cmg-app/existing-case/existing-case-number-handler" method="post" novalidate>
+  
+            <h1 class="govuk-heading-xl">What is your child maintenance case number?</h1>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="existing-case-number">
+                Case Number
+              </label>
+              <span id="existing-case-number-hint" class="govuk-hint">
+                You can find this number etc...
+              </span>
+              <input class="govuk-input" id="existing-case-number" name="existing-case-number" type="text" aria-describedby="existing-case-number-hint">
+            </div>
+            
+            <p class="govuk-body">
+            <button type="submit" class="govuk-button">
+              Continue
+            </button></p>
+
+            <p class="govuk-body">
+                <a href="declaration.html" class="govuk-link">I don't know my case number</a>
+            </p>
+
+          </form>
+        </div>
+
+      </div>
+    </main>
+
+</div>
+
+{% endblock %}

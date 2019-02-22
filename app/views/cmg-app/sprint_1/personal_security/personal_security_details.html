@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+    <a href="#" class="govuk-back-link">Back</a>
+  
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <form action="/form-handler" method="post" novalidate>
+            <h1 class="govuk-heading-xl">Create your personal security details</h1>
+            <p class="govuk-body">We need to set up some security on your case to make sure your details are safe and secure. These security details are personal to you. You’ll need a seven-number PIN and a password. You’ll need this when you use the self service website.</p>
+
+
+            <div class="govuk-form-group">
+                <label class="govuk-label" for="event-name">
+                  Seven digit pin
+                </label>
+                <span id="event-name-hint" class="govuk-hint">
+                  Please enter a seven digit pin because...
+                </span>
+                <input class="govuk-input" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+              </div>
+
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="event-name">
+                  Password
+                </label>
+                <span id="event-name-hint" class="govuk-hint">
+                  Please enter a password because...
+                </span>
+                <input class="govuk-input" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+              </div>
+
+            <button type="submit" class="govuk-button">
+              Continue
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+  {% endblock %}

@@ -1,0 +1,48 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+    <a href="index.html" class="govuk-back-link">Back</a>
+  
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+      <div class="govuk-grid-row">
+
+        <div class="govuk-grid-column-two-thirds">
+          <form action="/cmg-app/urn-number-handler" method="post" novalidate>
+  
+            <h1 class="govuk-heading-xl">What is your URN number?</h1>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="event-name">
+                URN Number
+              </label>
+              <span id="event-name-hint" class="govuk-hint">
+                This number will be included on the email...
+              </span>
+              <input class="govuk-input" id="event-urn-number" name="urn-number" type="text" aria-describedby="event-urn-number-hint">
+            </div>
+            
+            <p class="govuk-body">
+            <button type="submit" class="govuk-button">
+              Continue
+            </button></p>
+
+            <p class="govuk-body">
+                <a href="declaration.html" class="govuk-link">I don't have my URN number</a>
+            </p>
+
+          </form>
+        </div>
+
+      </div>
+    </main>
+
+</div>
+
+{% endblock %}

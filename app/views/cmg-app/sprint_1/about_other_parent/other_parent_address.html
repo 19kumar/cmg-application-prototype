@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+    <a href="#" class="govuk-back-link">Back</a>
+  
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <form action="/cmg-app/about-other-parent/other-parent-address-handler" method="post" novalidate>
+            <div class="govuk-form-group">
+              <h1 class="govuk-label-wrapper">
+                <label class="govuk-label govuk-label--xl" for="postcode">
+                  What is the other parent's home postcode?
+                </label>
+              </h1>
+              <input class="govuk-input govuk-input--width-10" id="postcode" name="postcode" type="text">
+            </div>
+  
+            <button type="submit" class="govuk-button">
+              Find Address
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  {% endblock %}

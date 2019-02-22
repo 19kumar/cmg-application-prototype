@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+    <a href="#" class="govuk-back-link">Back</a>
+  
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <form action="/form-handler" method="post" novalidate>
+            <h1 class="govuk-heading-xl">Payment card details</h1>
+            <p class="govuk-body">*Note: not sure what to do with this page, is it auto generated from govpay??</p>
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="event-name">
+                Card number
+              </label>
+              <input class="govuk-input" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+            </div>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="event-name">
+                Expiry date
+              </label>
+              <input class="govuk-input" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+            </div>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="event-name">
+                Name on card
+              </label>
+              <input class="govuk-input" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+            </div>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="event-name">
+                Card security code
+              </label>
+              <input class="govuk-input" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+            </div>
+
+
+  
+            <button type="submit" class="govuk-button">
+              Continue
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+  {% endblock %}

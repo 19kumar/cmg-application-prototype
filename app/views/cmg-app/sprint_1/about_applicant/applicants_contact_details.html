@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <a href="#" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <form action="/cmg-app/about-applicant/applicant-contact-details-handler" method="post" novalidate>
+
+          <div class="govuk-form-group">
+            <h1 class="govuk-label-wrapper">
+              <label class="govuk-label govuk-label--xl" for="contact-details">
+                What are your contact details?
+              </label>
+            </h1>
+            <label class="govuk-label" for="applicant-telephone-number">
+              Telephone number
+            </label>
+            <span id="applicant-telephone-hint" class="govuk-hint">
+              Enter a telephone number..
+            </span>
+            <input class="govuk-input govuk-input--width-20" id="applicant-telephone-number"
+              name="applicant-telephone-number" type="tel" autocomplete="tel">
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="applicant-email">
+              Email address
+            </label>
+            <span id="applicant-email-hint" class="govuk-hint">
+              Enter an email address...
+            </span>
+            <input class="govuk-input" id="applicant-email" name="applicant-email" type="applicant-email"
+              aria-describedby="applicant-email-hint" autocomplete="applicant-email" spellcheck="false">
+          </div>
+
+          <button type="submit" class="govuk-button">
+            Continue
+          </button>
+        </form>
+        <p class="govuk-body">*Preferred contact time?? - add to here with radio buttons??</p>
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}

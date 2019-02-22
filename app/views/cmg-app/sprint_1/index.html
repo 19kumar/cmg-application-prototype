@@ -1,0 +1,91 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Child Maintenance Service Application</h1>
+
+        <p class="govuk-body">The landing page is a quick start guide on what the applicant can expect from the
+          Application process and what information will be required.</p>
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li>do something</li>
+          <li>update your name, address or other details</li>
+          <li>do something else</li>
+
+          <li>£20 App Fee at end of process</li>
+          <li>You will be exempt from £20 fee if: Under 19, Ni Resident, Reported Abuse</li>
+          <li>Have you gone through Options?</li>
+          <li>Have you got a URN?</li>
+          <li>RP Information</li>
+          <li>QC Information</li>
+          <li>PP Information</li>
+          <li>Informed they will be registered to the self service portal</li>
+          <li>Method of payment can be only Debit/Credit Card</li>
+        </ul>
+
+        <p class="govuk-body">An application could take on average upto 25 minutes</p>
+
+        <a href="what_is_your_urn_number.html" role="button" draggable="false"
+          class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">
+          Start now
+        </a>
+
+        <h2 class="govuk-heading-m">Before you start</h2>
+
+        <p class="govuk-body">What we do with your information
+          <a class="govuk-link" href="#">link</a>.</p>
+
+        <p class="govuk-body">What information we share / not share depending on your service type choice
+          <a class="govuk-link" href="#">link</a>.</p>
+
+        <p class="govuk-body">Link to Service Types information
+          <a class="govuk-link" href="#">link</a>.</p>
+      </div>
+
+      <div class="govuk-grid-column-one-third">
+
+        <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+        <aside class="app-related-items" role="complementary">
+          <h2 class="govuk-heading-m" id="subsection-title">
+            Subsection
+          </h2>
+          <nav role="navigation" aria-labelledby="subsection-title">
+            <ul class="govuk-list govuk-!-font-size-16">
+              <li>
+                <a class="govuk-link" href="#">
+                  Related link
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link" href="#">
+                  Related link
+                </a>
+              </li>
+              <li>
+                <a href="#" class="govuk-link govuk-!-font-weight-bold">
+                  More
+                  <span class="govuk-visually-hidden">in Subsection</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+    <a href="#" class="govuk-back-link">Back</a>
+  
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <form action="/cmg-app/about-other-parent/other-parent-shared-care-handler" method="post" novalidate>
+  
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                  <h1 class="govuk-fieldset__heading">
+                    How often do the children stay overnight with the paying parent?
+                  </h1>
+                </legend>
+                <div class="govuk-radios">
+                 
+                    <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="other-parent-shared-care-1" name="other-parent-shared-care" type="radio" value="Never">
+                    <label class="govuk-label govuk-radios__label" for="other-parent-shared-care-1">
+                      Never
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="other-parent-shared-care-2" name="other-parent-shared-care" type="radio" value="Less than 1 night a week">
+                    <label class="govuk-label govuk-radios__label" for="other-parent-shared-care-2">
+                        Less than 1 night a week (less than 52 nights a year)
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="other-parent-shared-care-3" name="other-parent-shared-care" type="radio" value="1 to 2 nights a week">
+                    <label class="govuk-label govuk-radios__label" for="other-parent-shared-care-3">
+                        1 to 2 nights a week (52 to 103 a year)
+                    </label>
+                  </div>
+
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="other-parent-shared-care-1" name="other-parent-shared-care" type="radio" value="2 to 3 nights a week">
+                    <label class="govuk-label govuk-radios__label" for="other-parent-shared-care-1">
+                        2 to 3 nights a week (104 to 155 a year)
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="other-parent-shared-care-2" name="other-parent-shared-care" type="radio" value="3 nights a week">
+                    <label class="govuk-label govuk-radios__label" for="other-parent-shared-care-2">
+                        3 nights a week (156 to 174 a year)
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="other-parent-shared-care-3" name="other-parent-shared-care" type="radio" value="More than 3 nights a week">
+                    <label class="govuk-label govuk-radios__label" for="other-parent-shared-care-3">
+                        More than 3 nights a week (175 or more a year)
+                    </label>
+                  </div>
+                  
+                </div>
+              </fieldset>
+            </div>
+  
+            <button type="submit" class="govuk-button">
+              Continue
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+  {% endblock %}

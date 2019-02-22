@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+    <a href="#" class="govuk-back-link">Back</a>
+  
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <form action="/cmg-app/sprint-1/sms-handler" method="post" novalidate>
+  
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                    <h1 class="govuk-fieldset__heading">
+                      Opt-in to our SMS service? 
+                    </h1>
+                  </legend>
+                  <span id="changed-name-hint" class="govuk-hint">
+                        Would you like to opt-in to our SMS service? SMS is automated and replies can’t be read. 
+                  </span>
+                  <div class="govuk-radios govuk-radios--inline">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="sms-opt-yes" name="sms-opt" type="radio" value="Yes">
+                      <label class="govuk-label govuk-radios__label" for="sms-opt-yes">
+                        Yes
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="sms-opt-no" name="sms-opt" type="radio" value="No">
+                      <label class="govuk-label govuk-radios__label" for="sms-opt-no">
+                        No
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+  
+            <button type="submit" class="govuk-button">
+              Continue
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+  {% endblock %}

@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+    <a href="#" class="govuk-back-link">Back</a>
+  
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <form action="/cmg-app/about-applicant/applicant-date-of-birth-handler" method="post" novalidate>
+  
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" aria-describedby="applicant-date-of-birth-hint" role="group">
+                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                    <h1 class="govuk-fieldset__heading">
+                      What is your date of birth?
+                    </h1>
+                  </legend>
+                  <span id="applicant-date-of-birth-hint" class="govuk-hint">
+                    For example, 12 11 1970
+                  </span>
+                  <div class="govuk-date-input" id="applicant-date-of-birth">
+                    <div class="govuk-date-input__item">
+                      <div class="govuk-form-group">
+                        <label class="govuk-label govuk-date-input__label" for="applicant_date_of_birth_day">
+                          Day
+                        </label>
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="applicant-date-of-birth-day" name="applicant-date-of-birth-day" type="number" pattern="[0-9]*">
+                      </div>
+                    </div>
+                    <div class="govuk-date-input__item">
+                      <div class="govuk-form-group">
+                        <label class="govuk-label govuk-date-input__label" for="applicant-date-of-birth-month">
+                          Month
+                        </label>
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="applicant-date-of-birth-month" name="applicant-date-of-birth-month" type="number" pattern="[0-9]*">
+                      </div>
+                    </div>
+                    <div class="govuk-date-input__item">
+                      <div class="govuk-form-group">
+                        <label class="govuk-label govuk-date-input__label" for="applicant-date-of-birth-year">
+                          Year
+                        </label>
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="applicant-date-of-birth-year" name="applicant-date-of-birth-year" type="number" pattern="[0-9]*">
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            
+  
+            <button type="submit" class="govuk-button">
+              Continue
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+  {% endblock %}

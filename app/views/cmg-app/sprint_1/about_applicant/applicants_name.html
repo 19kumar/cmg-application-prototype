@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+    <a href="#" class="govuk-back-link">Back</a>
+  
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <h1 class="govuk-heading-xl">What is your name?</h1>
+          <form action="/cmg-app/about-applicant/applicant-name-handler" method="post" novalidate>
+            
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="applicant-first-name">
+                First name
+              </label>
+              <input class="govuk-input" id="applicant-first-name" name="applicant-first-name" type="text" autocomplete="name" spellcheck="false">
+            </div>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="applicant-middle-name">
+                Middle names (optional)
+              </label>
+              <input class="govuk-input" id="applicant-middle-name" name="applicant-middle-name" type="text" autocomplete="name" spellcheck="false">
+            </div>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="applicant-last-name">
+                Last name
+              </label>
+              <input class="govuk-input" id="applicant-last-name" name="applicant-last-name" type="text" autocomplete="name" spellcheck="false">
+            </div>
+
+            <button type="submit" class="govuk-button">
+              Continue
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+  {% endblock %}

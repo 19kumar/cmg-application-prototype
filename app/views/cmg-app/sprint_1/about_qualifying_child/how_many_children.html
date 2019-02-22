@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+    <a href="#" class="govuk-back-link">Back</a>
+  
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <form action="/cmg-app/qualifying-child/how-many-children-handler " method="post" novalidate>
+  
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                  <h1 class="govuk-fieldset__heading">
+                    How many children will you be receiving child maintenance for?
+                  </h1>
+                  <p class="govuk-body">Include children you need this child maintenance arrangement for. ‘Children’ means anyone under 16, or under 20 and in full-time training or education up to A level or equivalent.</p>
+                </legend>
+                <div class="govuk-radios">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="how-many-children-yes" name="how-many-children" type="radio" value="Yes">
+                    <label class="govuk-label govuk-radios__label" for="how-many-children-yes">
+                      1
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="how-many-children-no" name="how-many-children" type="radio" value="No">
+                    <label class="govuk-label govuk-radios__label" for="how-many-children-no">
+                      2
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="how-many-children-no" name="how-many-children" type="radio" value="No">
+                    <label class="govuk-label govuk-radios__label" for="how-many-children-no">
+                      3 or more
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+  
+            <button type="submit" class="govuk-button">
+              Continue
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+  {% endblock %}
